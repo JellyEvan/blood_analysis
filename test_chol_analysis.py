@@ -47,8 +47,9 @@ def test_LDL_analysis():
 
 
 
-
 '''
+
+
 @pytest.mark.parametrize("input, ouput", [
     (100, 'Normal'),
     (50, 'Borderline low'),
@@ -70,7 +71,7 @@ def test_HDL_analysis2(input, ouput):
 @pytest.mark.parametrize("input, output, expected", [
     (100, 'Normal', True),
     (50, 'Borderline low', True),
-    (20, 'Low', True),
+    (20, 'Low', True)
 ])
 def test_HDL_analysis3(input, output, expected):
     """Parametrize Tests HDL_analysis method
