@@ -1,5 +1,4 @@
 import pytest
-import chol_analysis
 
 
 def test_HDL_analysis():
@@ -14,6 +13,33 @@ def test_HDL_analysis():
     answer = HDL_analysis(input)
     expected = 'Normal'
     assert answer == expected
+
+
+def test_LDL_analysis():
+    """Tests HDL_analysis method
+    Args:
+        HDL_level
+    Returns:
+        Passed if answer == expected
+    """
+    from chol_analysis import LDL_analysis
+    input = 100
+    answer = LDL_analysis(input)
+    expected = 'Normal'
+    assert answer == expected
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
